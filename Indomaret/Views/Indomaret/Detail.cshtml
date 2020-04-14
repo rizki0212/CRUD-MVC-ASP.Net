@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail</h2>
+<table class="table table-striped table table-bordered" >
+    <thead>
+        <tr>
+            <th>Kode Barang</th>
+            <th>Nama Barang</th>
+            <th>Harga</th>
+            <th>Nama Suplier</th>
+            
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>@Model.kode_barang</td>
+            <td>@Model.nama</td>
+            <td>@Model.harga</td>
+            <td>@Model.suplier</td>
+        </tr>
+    </tbody>
+
+</table>

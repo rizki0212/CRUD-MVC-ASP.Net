@@ -1,0 +1,40 @@
+﻿@model Indomaret.Models.Indomaretku
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+<form action="/Indomaret/Update" method="post">
+
+    <table class="table">
+        <tr>
+            <td>Kode Barang :</td>
+            <td><input type="text" name="kode_barang" value="@Model.kode_barang" readonly/></td>
+        </tr>
+
+        <tr>
+            <td>Nama Barang :</td>
+            <td><input type="text" name="nama" value="@Model.nama" /></td>
+        </tr>
+
+        <tr>
+            <td>Harga :</td>
+            <td><input type="text" name="harga" value="@Model.harga" /></td>
+        </tr>
+            
+        <tr>
+            <td>Nama Suplier :</td>
+            <td><input type="text" name="suplier" value="@Model.suplier" /></td>
+        </tr>
+
+
+        <tr>
+            <td colspan="2">
+                <button type="reset" class="btn btn-secondary">Batal</button>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
